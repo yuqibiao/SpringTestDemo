@@ -10,14 +10,25 @@ import java.util.List;
  * @date 2017/6/22.
  */
 public class User {
+
     private int id;
     private String username;// 用户姓名
     private String sex;// 性别
     private Date birthday;// 生日
     private String address;// 地址
 
+    private List<String> tags;
+
     public User() {
 
+    }
+
+    public void init(){
+        System.out.println("init-method===============");
+    }
+
+    public void destroy(){
+        System.out.println("destroy-method===============");
     }
 
     public int getId() {
@@ -58,6 +69,14 @@ public class User {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public List<String> getTags() {
+        return tags;
+    }
+
+    public void setTags(List<String> tags) {
+        this.tags = tags;
     }
 
     @Override

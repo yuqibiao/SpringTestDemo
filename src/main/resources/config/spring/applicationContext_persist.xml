@@ -3,8 +3,20 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="user" class="com.yyyu.spring.pojo.User">
-        <property name="username" value="yu"></property>
+    <bean id="userOrder" class="com.yyyu.spring.pojo.UserOrder" scope="prototype">
+        <property name="user" ref="user"/>
     </bean>
+
+    <bean id="user" class="com.yyyu.spring.pojo.User" init-method="init" destroy-method="destroy">
+        <property name="username" value="yu"/>
+        <property name="tags">
+            <array>
+                <value>90后</value>
+                <value>肥宅</value>
+                <value>文艺青年</value>
+            </array>
+        </property>
+    </bean>
+
 
 </beans>
