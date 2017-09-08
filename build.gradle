@@ -32,7 +32,9 @@ dependencies {
     compile 'org.springframework:spring-core:4.2.4.RELEASE'
     //Spring的面向切面编程,提供AOP(面向切面编程)实现
     compile 'org.springframework:spring-aop:4.2.4.RELEASE'
+    compile 'org.springframework:spring-aspects:4.2.4.RELEASE'
     //Spring IOC得基础实现
     compile 'org.springframework:spring-beans:4.2.4.RELEASE'
     compile 'org.springframework:spring-context:4.2.4.RELEASE'
+    compile 'org.springframework:spring-test:4.2.4.RELEASE'
 }

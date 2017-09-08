@@ -20,10 +20,13 @@
           <element id="library" level="project" name="Gradle: org.springframework:spring-core:4.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-test:4.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
           <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.2.4.RELEASE/23cd0109e4eafc5629547e3680b0c4031e82efdd/spring-context-4.2.4.RELEASE.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.2.4.RELEASE/15b6f6d61bc68fe2cc6cbd63e2329601afb8b39/spring-expression-4.2.4.RELEASE.jar" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.2.4.RELEASE" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/4.2.4.RELEASE/f8b7fe22a4a1be320c9148499437c6347c1701f1/spring-aspects-4.2.4.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.8.7/f753e78bbe484e58b3b4e5ce3cc1751e50d11f6c/aspectjweaver-1.8.7.jar" />
         </element>
       </element>
     </root>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--开启注解扫描-->
+    <context:component-scan base-package="com.yyyu.spring.pojo.service"/>
+
+    <!--1.配置目标对象(注解了)-->
+    <!--<bean id="userService" class="com.yyyu.spring.pojo.service.UserServiceImpl"/>-->
+    <!--2.配置通知对象-->
+    <bean id="myAdvice" class="com.yyyu.spring.pojo.advice.MyAdvice"/>
+
+    <!--AOP配置-->
+    <aop:config>
+        <!--配置切入点-->
+        <aop:pointcut id="pc" expression="execution(* com.yyyu.spring.pojo.service.*ServiceImpl.*(..))"/>
+        <!--配置切面-->
+        <aop:aspect ref="myAdvice">
+            <!--给 execution中匹配到的方法添加 前置通知before-->
+            <aop:before method="before" pointcut-ref="pc"/>
+        </aop:aspect>
+    </aop:config>
+
+</beans>
